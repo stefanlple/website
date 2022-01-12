@@ -1,0 +1,114 @@
+$primarycolor: #75C7F8;
+
+/* Projetcs Site*/
+.portfolio{
+    .subtitle {
+        color: #75C7F8;
+        margin-top: 1.8em;
+    }
+    .featured-title{
+        font-size: 2em;
+        margin: 0.3em;
+        font-weight: bold;
+    }
+    img{
+        margin-bottom: 3em;
+    }
+    .skills{
+        color: white;
+        margin-top: 1.2em;
+        margin-bottom: 2em;
+        font-size: 0.9em;
+        font-weight: lighter;
+
+        li{
+            display: inline;
+            font-size: 0.2;
+            margin: 0em 0.5em;
+        }
+        .rcorners{
+        border-radius: 8px;
+        background: #EB6060;
+        padding: 3px 10px;
+        }
+    }
+}
+
+/* Responsive Design*/
+@media only screen and (min-width: 800px){
+    
+    /* Projects Site*/
+
+    .portfolio-left1{
+        display: grid;
+        place-content:center;
+        order: 1;
+    }
+    
+    .image-right1{
+        order:2;
+        float: right;
+    }   
+
+    .image-left1{
+        order: 3;
+        float: left;
+    }
+    
+    .portfolio-right1{
+        display: grid;
+        place-content:center;
+        order:4;
+    }
+   
+    .portfolio-left2{
+        display: grid;
+        place-content:center;
+        order:5;
+    }
+
+    .image-right2{
+        order:6;
+        float: right;
+    }
+
+    
+    .portfolio{
+        display:grid;
+        grid-template-columns: 50% auto;
+        text-align: left;
+        
+        .subtitle {
+            color: $primarycolor;
+            margin-top: -2em;
+        }
+        
+        .featured-title{
+            font-size: 2em;
+            margin: 0em;
+            margin-top: -0.6em;
+            font-weight: bold;
+        }
+        .skills{
+            margin-top: 0.4em;
+            li{
+                display: inline;
+                font-size: 0.2;
+                margin-right: 0.2em;
+                margin-left: 0em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1050px){
+    .portfolio img{
+        max-width: 500px;
+    }
+}
+
+
+@media only screen and (min-width: 1050px){
+    
+}
+
