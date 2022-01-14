@@ -25,7 +25,7 @@
 
             <div class="social-header">
                 <ul>
-                    <li><a href="#"><img src="/images/githubicon.svg" alt="githubicon"></a></li>
+                    <li><a href="https://github.com/stefanlple" target="_blank"><img src="/images/githubicon.svg" alt="githubicon"></a></li>
                     <li><a href="#"><img src="/images/linkedinicon.svg" alt="linkedinicon"></a></li>
                 </ul>
             </div>
@@ -40,13 +40,14 @@
                     <img id="blueunderlines" src="images/underlineblue.svg" alt="letter">
                     <h1 id="le">Le</h1>
                 </div>
-
-                <button id="herobutton" type="button" class="btn-1">
+                <form action="#section3">
+                <button id="herobutton" type="submit" class="btn-1">
                     <span class="button-icon">
                         <i class="fas fa-search"></i>
                     </span>
                     <span class="button-text">Projects</span>
                 </button>
+            </form>
                 <img src="/images/white-lotus.svg" alt="White Lotus" id="whitelotus">
             </div>
         </div>
@@ -61,30 +62,32 @@
                         <p class="introduction">Hello, world! <br> I am a media CS student.</p>
                     </div>
                 </div>
-                <button id="featured-button" type="button" class="btn-1" href="/aboutme.html">Show me more</button>
+                <form action="/aboutme.html">
+                <button id="featured-button" type="submit" class="btn-1">Show me more</button>
+                </form>
             </section>
         </div>
 
         <div class="section s3">
             <section class="projects" id="projects">
                 <div class="projects-container">
-                    <button id="featured-button" type="button" class="btn-1">Show me more</button>
+                    <form action="/projects.html">
+                    <button id="featured-button" type="submit" class="btn-1">Show me more</button>
+                </form>
                     <ul>
                         <li class="transition2">
                             <div class="icon-container one">
                                 <img src="images/Vector.svg" alt="Onlineshop Icon">
                             </div>
-                            <h3 class="skilltitle">Online Shop</h3>
-                            <p id="projects-text">Cloud based POS System for small businesses. Useful analytics.
-                                Available offline.</p>
+                            <h3 class="skilltitle">Recipe API</h3>
+                            <p id="projects-text">Food recommendation service catered to your cravings. Based on your ingredient.</p>
                         </li>
                         <li class="transition2">
                             <div class="icon-container two">
                                 <img src="images/fluent_building-shop-24-filled.svg" alt="Onlineshop Icon">
                             </div>
-                            <h3 class="skilltitle">POS System</h3>
-                            <p id="projects-text">Food recommendation service catered to your cravings. Recipes or
-                                restaurants nearby.</p>
+                            <h3 class="skilltitle">SaveTab-Extension</h3>
+                            <p id="projects-text">A Google Chrome extension that saves the current URL</p>
                         </li>
                         <li class="transition2">
                             <div class="icon-container three">
@@ -103,11 +106,12 @@
             <section class="contacts" id="contacts">
                 <p id="GetInTouch">Get in Touch</p>
                 <img id="blueunderlines" src="images/underlineblue.svg" alt="underlineblue">
-                <p id="email">stefanle01@yahoo.de</p>
+                <div class="tooltip">
+                <button type="submit" id="email" onclick="copyToClipboard()" onmouseout="outFunc()"> <span class="tooltiptext" id="myTooltip">Click to copy</span>stefanle01@yahoo.de</button>
+                </div>
                 <div class="socials">
                     <ul>
-
-                        <li><a href="#"><img src="/images/githubicon.svg" alt="githubicon"></a></li>
+                        <li><a href="https://github.com/stefanlple" target="_blank"><img src="/images/githubicon.svg" alt="githubicon"></a></li>
                         <li><a href="#"><img src="/images/linkedinicon.svg" alt="linkedinicon"></a></li>
                     </ul>
                 </div>

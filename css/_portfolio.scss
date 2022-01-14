@@ -2,6 +2,7 @@ $primarycolor: #75C7F8;
 
 /* Projetcs Site*/
 .portfolio{
+    margin-top: 7em ;
     .subtitle {
         color: #75C7F8;
         margin-top: 1.8em;
@@ -12,7 +13,10 @@ $primarycolor: #75C7F8;
         font-weight: bold;
     }
     img{
+        border-radius: 3%;
         margin-bottom: 3em;
+        width: 440px;
+
     }
     .skills{
         color: white;
@@ -46,13 +50,28 @@ $primarycolor: #75C7F8;
     }
     
     .image-right1{
+        padding: 2em 2em 2em 0;
         order:2;
-        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height:auto;
+        }
     }   
 
     .image-left1{
+        padding: 2em 2em 2em 0;
         order: 3;
-        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height:auto;
+        }
+        
     }
     
     .portfolio-right1{
@@ -68,8 +87,16 @@ $primarycolor: #75C7F8;
     }
 
     .image-right2{
+        padding: 2em 2em 2em 0;
         order:6;
-        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height:auto;
+
+        }
     }
 
     
@@ -103,12 +130,19 @@ $primarycolor: #75C7F8;
 
 @media only screen and (min-width: 1050px){
     .portfolio img{
-        max-width: 500px;
+        max-width: 600px;
     }
 }
 
 
-@media only screen and (min-width: 1050px){
-    
+@media only screen and (min-width: 1250px){
+    .portfolio img{
+        max-width: 800px;
+    }
+    .portfolio{
+        p{
+            font-size: 1.2em;
+        }
+    }
 }
 

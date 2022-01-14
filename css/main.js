@@ -36,12 +36,22 @@ new fullpage('#fullpage', {
         }
         if(destination.index===3){
             const text= section.querySelectorAll("p");
-            const text2= section.querySelectorAll("#blueunderlines,ul");
+            const text2= section.querySelectorAll("#blueunderlines,ul,#email");
             const letter= section.querySelectorAll("#letter")
             tl.from(text,0.8,{x:"-50",opacity:0});
             tl.from(text2,0.8,{x:"-50",opacity:0},"-=0.4");
             tl.from(letter,0.5,{x:"50",opacity:0},"-=0.4")
         }
     }
-
 })
+
+function copyToClipboard(){
+    navigator.clipboard.writeText("stefanle01@yahoo.de")
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied to clipboard";
+}
+
+function outFunc(){
+    const tooltip=document.getElementById("myTooltip");
+    tooltip.innerHTML="Click to copy"
+}

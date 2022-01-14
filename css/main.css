@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 /* Projetcs Site*/
+.portfolio {
+  margin-top: 7em;
+}
+
 .portfolio .subtitle {
   color: #75C7F8;
   margin-top: 1.8em;
@@ -12,7 +16,9 @@
 }
 
 .portfolio img {
+  border-radius: 3%;
   margin-bottom: 3em;
+  width: 440px;
 }
 
 .portfolio .skills {
@@ -47,16 +53,42 @@
             order: 1;
   }
   .image-right1 {
+    padding: 2em 2em 2em 0;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .image-right1 img {
+    width: 100%;
+    height: auto;
   }
   .image-left1 {
+    padding: 2em 2em 2em 0;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .image-left1 img {
+    width: 100%;
+    height: auto;
   }
   .portfolio-right1 {
     display: -ms-grid;
@@ -75,10 +107,23 @@
             order: 5;
   }
   .image-right2 {
+    padding: 2em 2em 2em 0;
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6;
-    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .image-right2 img {
+    width: 100%;
+    height: auto;
   }
   .portfolio {
     display: -ms-grid;
@@ -110,7 +155,16 @@
 
 @media only screen and (min-width: 1050px) {
   .portfolio img {
-    max-width: 500px;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .portfolio img {
+    max-width: 800px;
+  }
+  .portfolio p {
+    font-size: 1.2em;
   }
 }
 
@@ -680,13 +734,26 @@ section p {
   width: 150px;
   height: auto;
   margin-top: -3em;
+  margin-bottom: 2em;
 }
 
 .contacts #email {
   font-size: 1.1em;
+  border: none;
+  background-color: transparent;
+  color: white;
+  width: 200px;
+  margin-left: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.contacts #email:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .contacts ul {
+  margin-top: 2em !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,7 +786,7 @@ section p {
 }
 
 .contacts .socials li {
-  margin-left: -1em;
+  margin-left: -1em !important;
 }
 
 #letter {
@@ -730,6 +797,46 @@ section p {
   height: 1400px;
   width: 500px;
   float: right;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  font-size: 0.7em;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Responsive Design*/
@@ -1127,7 +1234,7 @@ section p {
     width: 45px;
   }
   .projects-container .contacts .socials li {
-    margin-left: -1em;
+    margin-right: 1em !important;
   }
   #letter {
     margin-top: -68em;
@@ -1156,5 +1263,14 @@ section p {
   .contacts #email {
     font-size: 1.6em;
   }
+  .tooltip .tooltiptext {
+    width: 140px;
+    font-size: 0.6em;
+  }
+}
+
+.fa-external-link-alt {
+  margin-left: 0.3em;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
