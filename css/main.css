@@ -469,7 +469,7 @@ img {
 }
 
 .nav-container {
-  background-image: url(https://github.com/stefanlple/website/blob/master/images/curls.png);
+  background-image: url("../images/curls.png");
   background-size: 200%;
   opacity: 80%;
   overflow: hidden;
