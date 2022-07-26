@@ -669,7 +669,7 @@ section p {
   background: #78A9C6;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-top: 1.5em;
+  margin-top: 3em;
 }
 
 .projects p {
@@ -690,7 +690,7 @@ section p {
   background: white;
   padding: 1.5em;
   border-radius: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .projects-container ul li .icon-container {
@@ -703,7 +703,7 @@ section p {
 }
 
 .projects-container ul li {
-  padding: 0.8em;
+  padding: 0.5em;
 }
 
 .projects-container ul li img {
