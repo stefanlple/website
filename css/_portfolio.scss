@@ -49,15 +49,27 @@ $primarycolor: #75c7f8;
     @include portfolio;
     order: 1;
   }
+  .portfolio-left2 {
+    @include portfolio;
+    order: 5;
+  }
+  .portfolio-left3 {
+    @include portfolio;
+    order: 9;
+  }
 
   .portfolio-right1 {
     @include portfolio;
     order: 4;
   }
 
-  .portfolio-left2 {
+  .portfolio-right2 {
     @include portfolio;
-    order: 5;
+    order: 8;
+  }
+  .portfolio-right3 {
+    @include portfolio;
+    order: 12;
   }
 
   @mixin image {
@@ -70,19 +82,35 @@ $primarycolor: #75c7f8;
       height: auto;
     }
   }
-  .image-right2 {
-    @include image;
-    order: 6;
-  }
 
   .image-right1 {
     @include image;
     order: 2;
   }
+  .image-right2 {
+    @include image;
+    order: 6;
+  }
+  .image-right3 {
+    @include image;
+    order: 10;
+  }
+  .image-right4 {
+    @include image;
+    order: 14;
+  }
 
   .image-left1 {
     @include image;
     order: 3;
+  }
+  .image-left2 {
+    @include image;
+    order: 7;
+  }
+  .image-left3 {
+    @include image;
+    order: 11;
   }
 
   .portfolio {

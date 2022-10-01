@@ -1,134 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/fullpage.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/f7ba3e70bd.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="css/fullpage.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/f7ba3e70bd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div class="nav-container">
-        <header id="section1">
-            <a href="#section1" class="logo">Stefan Le</a>
-            <nav>
-                <ul>
-                    <li><a href="#section2">About me</a></li>
-                    <li><a href="#section3">Projects</a></li>
-                    <li><a href="#section4">Contact</a></li>
-                </ul>
-            </nav>
+      <header id="section1">
+        <a href="#section1" class="logo">Stefan Le</a>
+        <nav>
+          <ul>
+            <li><a href="#section2">About me</a></li>
+            <li><a href="#section3">Projects</a></li>
+            <li><a href="#section4">Contact</a></li>
+          </ul>
+        </nav>
 
-            <div class="social-header">
-                <ul>
-                    <li><a href="https://github.com/stefanlple" target="_blank"><img src="images/githubicon.svg" alt="githubicon"></a></li>
-                    <li><a href="#"><img src="images/linkedinicon.svg" alt="linkedinicon"></a></li>
-                </ul>
-            </div>
-        </header>
+        <div class="social-header">
+          <ul>
+            <li>
+              <a href="https://github.com/stefanlple" target="_blank"
+                ><img src="images/githubicon.svg" alt="githubicon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/linkedinicon.svg" alt="linkedinicon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
     </div>
     <div id="fullpage">
-        <div class="section s1">
-            <div class="hero">
-                <div class="content">
-                    <p id="herosubtitle">Media Systems Student</p>
-                    <h1 id="stefan">Stefan</h1>
-                    <img id="blueunderlines" src="images/underlineblue.svg" alt="letter">
-                    <h1 id="le">Le</h1>
-                </div>
-                <form action="#section3">
-                <button id="herobutton" type="submit" class="btn-1">
-                    <span class="button-icon">
-                        <i class="fas fa-search"></i>
-                    </span>
-                    <span class="button-text">Projects</span>
-                </button>
-            </form>
-                <img src="images/white-lotus.svg" alt="White Lotus" id="whitelotus">
+      <div class="section s1">
+        <div class="hero">
+          <div class="content">
+            <p id="herosubtitle">Media Systems Student</p>
+            <h1 id="stefan">Stefan</h1>
+            <img
+              id="blueunderlines"
+              src="images/underlineblue.svg"
+              alt="letter"
+            />
+            <h1 id="le">Le</h1>
+          </div>
+          <form action="#section3">
+            <button id="herobutton" type="submit" class="btn-1">
+              <span class="button-icon">
+                <i class="fas fa-search"></i>
+              </span>
+              <span class="button-text">Projects</span>
+            </button>
+          </form>
+          <img src="images/white-lotus.svg" alt="White Lotus" id="whitelotus" />
+        </div>
+      </div>
+
+      <div class="section s2">
+        <section class="featured" id="featured">
+          <div class="aboutme">
+            <div class="inner transition2">
+              <p class="subtitle">Technology, Design, Story</p>
+              <p class="about">About Me</p>
+              <img
+                id="underlinered"
+                src="images/underlinered2.svg"
+                alt="underlinered"
+              />
+              <p class="introduction">
+                Hello, world! <br />
+                I am a media CS student.
+              </p>
             </div>
-        </div>
+          </div>
+          <form action="aboutme.html">
+            <button id="featured-button" type="submit" class="btn-1">
+              Show me more
+            </button>
+          </form>
+        </section>
+      </div>
 
-        <div class="section s2">
-            <section class="featured " id="featured">
-                <div class="aboutme">
-                    <div class="inner transition2">
-                        <p class="subtitle">Technology, Design, Story</p>
-                        <p class="about">About Me</p>
-                        <img id="underlinered" src="images/underlinered2.svg" alt="underlinered">
-                        <p class="introduction">Hello, world! <br> I am a media CS student.</p>
-                    </div>
+      <div class="section s3">
+        <section class="projects" id="projects">
+          <div class="projects-container">
+            <form action="projects.html">
+              <button id="featured-button" type="submit" class="btn-1">
+                Show me more
+              </button>
+            </form>
+            <ul>
+              <li class="transition2">
+                <div class="icon-container one">
+                  <img src="images/Vector.svg" alt="Onlineshop Icon" />
                 </div>
-                <form action="aboutme.html">
-                <button id="featured-button" type="submit" class="btn-1">Show me more</button>
-                </form>
-            </section>
-        </div>
+                <h3 class="skilltitle">E-Commerce</h3>
+                <p id="projects-text">
+                  Retail E-Commerce store that sells clothing and addtional
+                  products.
+                </p>
+              </li>
+              <li class="transition2">
+                <div class="icon-container two">
+                  <img
+                    src="images/fluent_building-shop-24-filled.svg"
+                    alt="Onlineshop Icon"
+                  />
+                </div>
+                <h3 class="skilltitle">Ecosystem Simulator</h3>
+                <p id="projects-text">
+                  An Unity application that simulates the predator and prey
+                  relationship of foxes and bunnies.
+                </p>
+              </li>
+              <li class="transition2">
+                <div class="icon-container three">
+                  <img
+                    src="images/ant-design_unordered-list-outlined.svg"
+                    alt="Onlineshop Icon"
+                  />
+                </div>
+                <h3 class="skilltitle">WeeklyToDo</h3>
+                <p id="projects-text">
+                  A web based ToDoList. Users can create and edit their weekly
+                  schedule.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
-        <div class="section s3">
-            <section class="projects" id="projects">
-                <div class="projects-container">
-                    <form action="projects.html">
-                    <button id="featured-button" type="submit" class="btn-1">Show me more</button>
-                </form>
-                    <ul>
-                        <li class="transition2">
-                            <div class="icon-container one">
-                                <img src="images/Vector.svg" alt="Onlineshop Icon">
-                            </div>
-                            <h3 class="skilltitle">Recipe API</h3>
-                            <p id="projects-text">Food recommendation service catered to your cravings. Based on your ingredient.</p>
-                        </li>
-                        <li class="transition2">
-                            <div class="icon-container two">
-                                <img src="images/fluent_building-shop-24-filled.svg" alt="Onlineshop Icon">
-                            </div>
-                            <h3 class="skilltitle">SaveTab-Extension</h3>
-                            <p id="projects-text">A Google Chrome extension that saves the current URL</p>
-                        </li>
-                        <li class="transition2">
-                            <div class="icon-container three">
-                                <img src="images/ant-design_unordered-list-outlined.svg" alt="Onlineshop Icon">
-                            </div>
-                            <h3 class="skilltitle">WeeklyToDo</h3>
-                            <p id="projects-text">A web based ToDoList. Users can create and edit their weekly schedule.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-
-        <div class="section s4">
-            <section class="contacts" id="contacts">
-                <p id="GetInTouch">Get in Touch</p>
-                <img id="blueunderlines" src="images/underlineblue.svg" alt="underlineblue">
-                <div class="tooltip">
-                <button type="submit" id="email" onclick="copyToClipboard()" onmouseout="outFunc()"> <span class="tooltiptext" id="myTooltip">Click to copy</span>stefanle01@yahoo.de</button>
-                </div>
-                <div class="socials">
-                    <ul>
-                        <li><a href="https://github.com/stefanlple" target="_blank"><img src="images/githubicon.svg" alt="githubicon"></a></li>
-                        <li><a href="#"><img src="images/linkedinicon.svg" alt="linkedinicon"></a></li>
-                    </ul>
-                </div>
-            </section>
-            <img id="letter" src="images/letter.svg" alt="letter">
-        </div>
-
+      <div class="section s4">
+        <section class="contacts" id="contacts">
+          <p id="GetInTouch">Get in Touch</p>
+          <img
+            id="blueunderlines"
+            src="images/underlineblue.svg"
+            alt="underlineblue"
+          />
+          <div class="tooltip">
+            <button
+              type="submit"
+              id="email"
+              onclick="copyToClipboard()"
+              onmouseout="outFunc()"
+            >
+              <span class="tooltiptext" id="myTooltip">Click to copy</span
+              >stefanle01@yahoo.de
+            </button>
+          </div>
+          <div class="socials">
+            <ul>
+              <li>
+                <a href="https://github.com/stefanlple" target="_blank"
+                  ><img src="images/githubicon.svg" alt="githubicon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/linkedinicon.svg" alt="linkedinicon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <img id="letter" src="images/letter.svg" alt="letter" />
+      </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
-        integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
-        integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+      integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+      integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="css/fullpage.js"></script>
     <script src="css/main.js"></script>
-</body>
-
+  </body>
 </html>

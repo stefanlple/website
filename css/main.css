@@ -43,26 +43,30 @@
     place-content: center;
     order: 1;
   }
-  .portfolio-right1 {
-    display: grid;
-    place-content: center;
-    order: 4;
-  }
   .portfolio-left2 {
     display: grid;
     place-content: center;
     order: 5;
   }
-  .image-right2 {
-    padding: 2em 2em 2em 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    order: 6;
+  .portfolio-left3 {
+    display: grid;
+    place-content: center;
+    order: 9;
   }
-  .image-right2 img {
-    width: 100%;
-    height: auto;
+  .portfolio-right1 {
+    display: grid;
+    place-content: center;
+    order: 4;
+  }
+  .portfolio-right2 {
+    display: grid;
+    place-content: center;
+    order: 8;
+  }
+  .portfolio-right3 {
+    display: grid;
+    place-content: center;
+    order: 12;
   }
   .image-right1 {
     padding: 2em 2em 2em 0;
@@ -75,6 +79,39 @@
     width: 100%;
     height: auto;
   }
+  .image-right2 {
+    padding: 2em 2em 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 6;
+  }
+  .image-right2 img {
+    width: 100%;
+    height: auto;
+  }
+  .image-right3 {
+    padding: 2em 2em 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 10;
+  }
+  .image-right3 img {
+    width: 100%;
+    height: auto;
+  }
+  .image-right4 {
+    padding: 2em 2em 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 14;
+  }
+  .image-right4 img {
+    width: 100%;
+    height: auto;
+  }
   .image-left1 {
     padding: 2em 2em 2em 0;
     display: flex;
@@ -83,6 +120,28 @@
     order: 3;
   }
   .image-left1 img {
+    width: 100%;
+    height: auto;
+  }
+  .image-left2 {
+    padding: 2em 2em 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 7;
+  }
+  .image-left2 img {
+    width: 100%;
+    height: auto;
+  }
+  .image-left3 {
+    padding: 2em 2em 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 11;
+  }
+  .image-left3 img {
     width: 100%;
     height: auto;
   }
