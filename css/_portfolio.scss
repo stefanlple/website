@@ -1,148 +1,131 @@
-$primarycolor: #75C7F8;
+$primarycolor: #75c7f8;
 
 /* Projetcs Site*/
-.portfolio{
-    margin-top: 7em ;
-    .subtitle {
-        color: #75C7F8;
-        margin-top: 1.8em;
-    }
-    .featured-title{
-        font-size: 2em;
-        margin: 0.3em;
-        font-weight: bold;
-    }
-    img{
-        border-radius: 3%;
-        margin-bottom: 3em;
-        width: 440px;
+.portfolio {
+  margin-top: 7em;
+  .subtitle {
+    color: #75c7f8;
+    margin-top: 1.8em;
+  }
+  .featured-title {
+    font-size: 2em;
+    margin: 0.3em;
+    font-weight: bold;
+  }
+  img {
+    border-radius: 3%;
+    margin-bottom: 3em;
+    width: 440px;
+  }
+  .skills {
+    color: white;
+    margin-top: 1.2em;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+    font-weight: lighter;
 
+    li {
+      display: inline;
+      font-size: 0.2;
+      margin: 0em 0.5em;
     }
-    .skills{
-        color: white;
-        margin-top: 1.2em;
-        margin-bottom: 2em;
-        font-size: 0.9em;
-        font-weight: lighter;
-
-        li{
-            display: inline;
-            font-size: 0.2;
-            margin: 0em 0.5em;
-        }
-        .rcorners{
-        border-radius: 8px;
-        background: #EB6060;
-        padding: 3px 10px;
-        }
+    .rcorners {
+      border-radius: 8px;
+      background: #eb6060;
+      padding: 3px 10px;
     }
+  }
 }
 
 /* Responsive Design*/
-@media only screen and (min-width: 800px){
-    
-    /* Projects Site*/
+@media only screen and (min-width: 800px) {
+  /* Projects Site*/
 
-    .portfolio-left1{
-        display: grid;
-        place-content:center;
-        order: 1;
-    }
-    
-    .image-right1{
-        padding: 2em 2em 2em 0;
-        order:2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 100%;
-            height:auto;
-        }
-    }   
+  @mixin portfolio {
+    display: grid;
+    place-content: center;
+  }
+  .portfolio-left1 {
+    @include portfolio;
+    order: 1;
+  }
 
-    .image-left1{
-        padding: 2em 2em 2em 0;
-        order: 3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 100%;
-            height:auto;
-        }
-        
-    }
-    
-    .portfolio-right1{
-        display: grid;
-        place-content:center;
-        order:4;
-    }
-   
-    .portfolio-left2{
-        display: grid;
-        place-content:center;
-        order:5;
-    }
+  .portfolio-right1 {
+    @include portfolio;
+    order: 4;
+  }
 
-    .image-right2{
-        padding: 2em 2em 2em 0;
-        order:6;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 100%;
-            height:auto;
+  .portfolio-left2 {
+    @include portfolio;
+    order: 5;
+  }
 
-        }
+  @mixin image {
+    padding: 2em 2em 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .image-right2 {
+    @include image;
+    order: 6;
+  }
+
+  .image-right1 {
+    @include image;
+    order: 2;
+  }
+
+  .image-left1 {
+    @include image;
+    order: 3;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 50% auto;
+    text-align: left;
+
+    .subtitle {
+      color: $primarycolor;
+      margin-top: -2em;
     }
 
-    
-    .portfolio{
-        display:grid;
-        grid-template-columns: 50% auto;
-        text-align: left;
-        
-        .subtitle {
-            color: $primarycolor;
-            margin-top: -2em;
-        }
-        
-        .featured-title{
-            font-size: 2em;
-            margin: 0em;
-            margin-top: -0.6em;
-            font-weight: bold;
-        }
-        .skills{
-            margin-top: 0.4em;
-            li{
-                display: inline;
-                font-size: 0.2;
-                margin-right: 0.2em;
-                margin-left: 0em;
-            }
-        }
+    .featured-title {
+      font-size: 2em;
+      margin: 0em;
+      margin-top: -0.6em;
+      font-weight: bold;
     }
+    .skills {
+      margin-top: 0.4em;
+      li {
+        display: inline;
+        font-size: 0.2;
+        margin-right: 0.2em;
+        margin-left: 0em;
+      }
+    }
+  }
 }
 
-@media only screen and (min-width: 1050px){
-    .portfolio img{
-        max-width: 600px;
-    }
+@media only screen and (min-width: 1050px) {
+  .portfolio img {
+    max-width: 600px;
+  }
 }
 
-
-@media only screen and (min-width: 1250px){
-    .portfolio img{
-        max-width: 800px;
+@media only screen and (min-width: 1250px) {
+  .portfolio img {
+    max-width: 800px;
+  }
+  .portfolio {
+    p {
+      font-size: 1.2em;
     }
-    .portfolio{
-        p{
-            font-size: 1.2em;
-        }
-    }
+  }
 }
-
