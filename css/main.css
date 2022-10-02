@@ -192,7 +192,7 @@
   position: absolute;
   width: 100%;
   height: 90px;
-  background: #2A2A2C;
+  background: #2a2a2c;
   top: 0;
   left: 0;
   z-index: -1;
@@ -245,7 +245,7 @@
 }
 
 .fullName {
-  color: #0A7DC1;
+  color: #0a7dc1;
 }
 
 .box {
@@ -291,7 +291,8 @@
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -370,7 +371,7 @@
 }
 
 hr {
-  border: 5px solid #75c7f8;
+  border: 6px solid #75c7f8;
   border-radius: 15px;
 }
 
@@ -383,7 +384,10 @@ hr {
 }
 
 @media only screen and (min-width: 800px) {
-  .infrastructure, .front-end, .back-end, .program-lan {
+  .infrastructure,
+.front-end,
+.back-end,
+.program-lan {
     grid-template-columns: repeat(3, 1fr);
   }
   .about-me::before {
@@ -399,7 +403,10 @@ hr {
   }
 }
 @media only screen and (min-width: 1250px) {
-  .infrastructure, .front-end, .back-end, .program-lan {
+  .infrastructure,
+.front-end,
+.back-end,
+.program-lan {
     grid-template-columns: repeat(4, 1fr);
   }
   .who-intro {
