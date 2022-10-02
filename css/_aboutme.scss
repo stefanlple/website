@@ -180,8 +180,10 @@
 }
 
 hr {
-  border: 6px solid $primarycolor;
+  background-color: $primarycolor;
+  border: 5px solid $primarycolor;
   border-radius: 15px;
+  height: 2px;
 }
 
 .long {
