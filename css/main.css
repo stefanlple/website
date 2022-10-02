@@ -372,9 +372,9 @@
 
 hr {
   background-color: #75c7f8;
-  border: 5px solid #75c7f8;
+  border: 2px solid #75c7f8;
   border-radius: 15px;
-  height: 2px;
+  height: 6px;
 }
 
 .long {
